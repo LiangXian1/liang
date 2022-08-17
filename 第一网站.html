@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+        margin: 0%;
+        height: 100vh;
+      }
+      /*边距
+      * {
+        border: 1px solid #333;
+      }*/
+      .flex {
+        display: flex;
+      }
+      /*临时白色变灰色*/
+      .baise {
+        background-color: #eee;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .daohang {
+        padding: 20px;
+        font-size: 14px;
+        color: #666;
+        border-bottom: 1px solid rgb(201, 201, 201);
+      }
+      .shuxiang {
+        flex-direction: column;
+      }
+      .neirong {
+        display: none;
+      }
+      .hengxiang {
+        flex-direction: row;
+      }
+      .xiangximulu {
+        flex-direction: column;
+      }
+      .mulu {
+        flex: auto;
+        margin: 0 0 8px;
+        height: 100px;
+      }
+      .xianggao {
+        height: 160px;
+      }
+      .tukuang {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 20px;
+      }
+      /* 上下左右外边距 */
+      .mg {
+        margin: 8px;
+        margin-right: 8px;
+        margin-top: 8px;
+      }
+      /* 阴影 */
+      .yinYing {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px" class="baise mg yinYing">
+      <!--头像-->
+      <div
+        style="
+          padding: 10px;
+          border-bottom: 1px solid #999;
+          justify-content: center;
+          align-items: center;
+        "
+        class="flex"
+      >
+        <img
+          alt="自个"
+          src="https://picture.xianniu.com/market/cms_system/20200106/XqM09zAfDkjdmJDAU8nO60TV8jb1nvq6PDl0HF3G.png"
+          width="150px"
+          height="90px"
+        />
+      </div>
+      <!--导航-->
+      <div
+        style="text-align: center; z-index: 2"
+        line-height:
+        200px;
+        class="flex1 yinYing"
+      >
+        <div class="daohang">战甲</div>
+        <div class="daohang">武器</div>
+        <div class="daohang">同伴</div>
+        <div class="daohang">MOD</div>
+        <div class="daohang">派系</div>
+        <div class="daohang">任务</div>
+        <div class="daohang">九重天</div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex flex1 shuxiang mg">
+      <!--头部栏-->
+      <div
+        style="height: 103px; overflow: auto; z-index: 1"
+        class="baise mg yinYing"
+      ></div>
+      <!--内容-->
+      <div class="flex flex1 mg" style="overflow: auto">
+        <!--左侧-->
+        <div style="flex: 4">
+          <!--详细目录-->
+          <div class="flex xiangximulv">
+            <div class="baise mulu flex1 mg yinYing"></div>
+            <div class="baise mulu flex1 mg yinYing"></div>
+            <div class="baise mulu flex1 mg yinYing"></div>
+            <div class="baise mulu flex1 mg yinYing"></div>
+          </div>
+          <!--主要-->
+          <div class="flex shuxiang mg yinYing">
+            <!--项-->
+            <div class="xianggao baise mg yinYing"></div>
+            <div class="xianggao baise mg yinYing"></div>
+            <div class="xianggao baise mg yinYing"></div>
+            <div class="xianggao baise mg yinYing"></div>
+            <div class="xianggao baise mg yinYing"></div>
+            <div class="xianggao baise mg yinYing"></div>
+            <div class="xianggao baise mg yinYing"></div>
+          </div>
+        </div>
+        <!--右侧-->
+        <div style="flex: 1; overflow: auto" class="flex shuxiang">
+          <img
+            src="https://tse3-mm.cn.bing.net/th/id/OIP-C.kmQ7pHTJA6PLWP6ZVxZojwHaMt?pid=ImgDet&rs=1"
+            class="tukuang"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
